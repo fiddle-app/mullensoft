@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mullensoft — Fiddle Practice Apps</title>
+  <meta name="description" content="A family of free, focused apps for old-time fiddle practice." />
+
+  <!--
+    PLACEHOLDER STYLING ONLY.
+    Before launch, replace this inline CSS with the shared design system:
+    _shared/design/*.css (tokens, fonts, icons). See README TODO + the family
+    "reuse-from-start" rule in fiddle/CLAUDE.md. Do not ship this as-is.
+  -->
+  <style>
+    :root { --bg:#1b1a17; --fg:#f4f1ea; --muted:#a8a194; --accent:#c8783c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;
+           background:var(--bg); color:var(--fg);
+           display:flex; flex-direction:column; align-items:center; min-height:100svh; }
+    header { text-align:center; padding:4rem 1.5rem 2rem; }
+    h1 { font-size:clamp(2rem,6vw,3.25rem); margin:0 0 .5rem; letter-spacing:.5px; }
+    header p { color:var(--muted); margin:0; font-size:1.1rem; }
+    main { width:100%; max-width:760px; padding:0 1.5rem 4rem; }
+    .apps { list-style:none; padding:0; margin:2rem 0 0; display:grid; gap:1rem; }
+    .apps a { display:block; padding:1.25rem 1.5rem; border:1px solid #3a372f;
+              border-radius:14px; color:var(--fg); text-decoration:none;
+              transition:border-color .15s, transform .15s; }
+    .apps a:hover { border-color:var(--accent); transform:translateY(-2px); }
+    .apps strong { font-size:1.15rem; }
+    .apps span { display:block; color:var(--muted); margin-top:.25rem; font-size:.95rem; }
+    footer { color:var(--muted); font-size:.85rem; padding:0 1.5rem 2rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mullensoft</h1>
+    <p>Free, focused apps for old-time fiddle practice.</p>
+  </header>
+
+  <main>
+    <!-- Absolute fiddle-app.github.io URLs for now; become /ear, /practice, /jam
+         subpaths automatically once mullensoft.com is attached to the Pages root. -->
+    <ul class="apps">
+      <li><a href="https://fiddle-app.github.io/ear">
+        <strong>Ear Tuner</strong>
+        <span>Train your intonation by ear.</span>
+      </a></li>
+      <li><a href="https://fiddle-app.github.io/practice">
+        <strong>Microbreaker</strong>
+        <span>A practice timer with built-in micro-breaks.</span>
+      </a></li>
+      <li><a href="https://fiddle-app.github.io/jam">
+        <strong>Jam Buddy</strong>
+        <span>Play along and keep time.</span>
+      </a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Made by Casey Mullen. More apps coming soon.</p>
+  </footer>
+</body>
+</html>
