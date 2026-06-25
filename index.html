@@ -3,62 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Mullensoft — Fiddle Practice Apps</title>
-  <meta name="description" content="A family of free, focused apps for old-time fiddle practice." />
+  <title>MullenSoft — Apps for fiddlers and their friends</title>
+  <meta name="description" content="MullenSoft — a family of apps for fiddlers and their friends." />
 
   <!--
     PLACEHOLDER STYLING ONLY.
-    Before launch, replace this inline CSS with the shared design system:
+    Before a real launch, replace this inline CSS with the shared design system:
     _shared/design/*.css (tokens, fonts, icons). See README TODO + the family
-    "reuse-from-start" rule in fiddle/CLAUDE.md. Do not ship this as-is.
+    "reuse-from-start" rule in fiddle/CLAUDE.md.
   -->
   <style>
-    :root { --bg:#1b1a17; --fg:#f4f1ea; --muted:#a8a194; --accent:#c8783c; }
+    :root { --bg:#1b1a17; --fg:#f4f1ea; --muted:#a8a194; --accent:#c8783c; --line:#3a372f; }
     * { box-sizing:border-box; }
     body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;
            background:var(--bg); color:var(--fg);
            display:flex; flex-direction:column; align-items:center; min-height:100svh; }
     header { text-align:center; padding:4rem 1.5rem 2rem; }
     h1 { font-size:clamp(2rem,6vw,3.25rem); margin:0 0 .5rem; letter-spacing:.5px; }
-    header p { color:var(--muted); margin:0; font-size:1.1rem; }
-    main { width:100%; max-width:760px; padding:0 1.5rem 4rem; }
-    .apps { list-style:none; padding:0; margin:2rem 0 0; display:grid; gap:1rem; }
-    .apps a { display:block; padding:1.25rem 1.5rem; border:1px solid #3a372f;
-              border-radius:14px; color:var(--fg); text-decoration:none;
-              transition:border-color .15s, transform .15s; }
-    .apps a:hover { border-color:var(--accent); transform:translateY(-2px); }
-    .apps strong { font-size:1.15rem; }
-    .apps span { display:block; color:var(--muted); margin-top:.25rem; font-size:.95rem; }
-    footer { color:var(--muted); font-size:.85rem; padding:0 1.5rem 2rem; text-align:center; }
+    header p { color:var(--muted); margin:0; font-size:1.15rem; }
+    main { width:100%; max-width:680px; padding:0 1.5rem 3rem; }
+    .apps { list-style:none; padding:0; margin:2.5rem 0 0; display:grid; gap:1rem; }
+    .app { position:relative; border:1px solid var(--line); border-radius:14px;
+           padding:1.25rem 1.5rem; transition:border-color .15s, transform .15s; }
+    .app strong { font-size:1.15rem; display:block; }
+    .app .tag { display:block; color:var(--muted); margin-top:.3rem; font-size:.95rem; }
+    /* Live (clickable) app — whole card is a link via the stretched anchor */
+    .app.live a { color:var(--fg); text-decoration:none; }
+    .app.live a::after { content:""; position:absolute; inset:0; }
+    .app.live:hover { border-color:var(--accent); transform:translateY(-2px); }
+    .app.live .go { color:var(--accent); font-size:.9rem; margin-top:.6rem; display:inline-block; }
+    /* Coming-soon apps — muted, not clickable */
+    .app.soon { opacity:.68; }
+    .badge { position:absolute; top:1rem; right:1.25rem; font-size:.72rem;
+             text-transform:uppercase; letter-spacing:1px; color:var(--muted);
+             border:1px solid var(--line); border-radius:999px; padding:.15rem .55rem; }
+    footer { color:var(--muted); font-size:.95rem; padding:1rem 1.5rem 3rem; text-align:center; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mullensoft</h1>
-    <p>Free, focused apps for old-time fiddle practice.</p>
+    <h1>MullenSoft</h1>
+    <p>Apps for fiddlers and their friends.</p>
   </header>
 
   <main>
-    <!-- Absolute fiddle-app.github.io URLs for now; become /ear, /practice, /jam
-         subpaths automatically once mullensoft.com is attached to the Pages root. -->
     <ul class="apps">
-      <li><a href="https://fiddle-app.github.io/ear">
+      <li class="app live">
+        <a href="intonio/support/">
+          <strong>Intonio</strong>
+          <span class="tag">Intonation monitor &amp; tuner.</span>
+          <span class="go">Learn more →</span>
+        </a>
+      </li>
+      <li class="app soon">
+        <span class="badge">Coming soon</span>
+        <strong>Practice Buddy</strong>
+        <span class="tag">A practice timer with built-in micro-breaks.</span>
+      </li>
+      <li class="app soon">
+        <span class="badge">Coming soon</span>
         <strong>Ear Tuner</strong>
-        <span>Train your intonation by ear.</span>
-      </a></li>
-      <li><a href="https://fiddle-app.github.io/practice">
-        <strong>Microbreaker</strong>
-        <span>A practice timer with built-in micro-breaks.</span>
-      </a></li>
-      <li><a href="https://fiddle-app.github.io/jam">
+        <span class="tag">Ear training and pitch discrimination.</span>
+      </li>
+      <li class="app soon">
+        <span class="badge">Coming soon</span>
+        <strong>Timeliner</strong>
+        <span class="tag">Annotate and review your lesson recordings.</span>
+      </li>
+      <li class="app soon">
+        <span class="badge">Coming soon</span>
         <strong>Jam Buddy</strong>
-        <span>Play along and keep time.</span>
-      </a></li>
+        <span class="tag">Helping you out in a jam.</span>
+      </li>
     </ul>
   </main>
 
   <footer>
-    <p>Made by Casey Mullen. More apps coming soon.</p>
+    <p>These and more apps are coming soon.</p>
   </footer>
 </body>
 </html>
