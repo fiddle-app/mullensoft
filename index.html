@@ -32,6 +32,10 @@
     .app.live a::after { content:""; position:absolute; inset:0; }
     .app.live:hover { border-color:var(--accent); transform:translateY(-2px); }
     .app.live .go { color:var(--accent); font-size:.9rem; margin-top:.6rem; display:inline-block; }
+    /* Extra per-card links (store badges etc.) — lifted above the stretched anchor */
+    .app .stores { position:relative; z-index:1; display:inline-block;
+                   margin:.6rem 0 0 1.25rem; font-size:.9rem; }
+    .app .stores a { color:var(--accent); }
     /* Coming-soon apps — muted, not clickable */
     .app.soon { opacity:.68; }
     .badge { position:absolute; top:1rem; right:1.25rem; font-size:.72rem;
@@ -68,6 +72,7 @@
           <span class="tag">Ear training and pitch discrimination.</span>
           <span class="go">Open →</span>
         </a>
+        <span class="stores"><a href="https://apps.apple.com/us/app/ear-tuner-intonation-training/id6785302288" target="_blank" rel="noopener">App&nbsp;Store&nbsp;→</a></span>
       </li>
       <li class="app live">
         <span class="badge">Coming soon</span>
