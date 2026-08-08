@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tune-Sync Apps — Mullensoft</title>
+  <meta name="description" content="The Mullensoft apps that can share one sync folder — Tune Hub, Timeliner, Jam Buddy, and Practice Buddy." />
+
+  <!-- Tokens mirror the mullensoft.com landing (placeholder system; see mullensoft/README). -->
+  <style>
+    :root { --bg:#1b1a17; --fg:#f4f1ea; --muted:#a8a194; --accent:#c8783c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;
+           background:var(--bg); color:var(--fg);
+           display:flex; flex-direction:column; align-items:center; min-height:100svh; }
+    a { color:var(--accent); }
+    header { text-align:center; padding:3.5rem 1.5rem 1rem; }
+    header .eyebrow { color:var(--muted); text-transform:uppercase; letter-spacing:1.5px;
+                     font-size:.78rem; margin:0 0 .5rem; }
+    h1 { font-size:clamp(1.8rem,5vw,2.6rem); margin:0; }
+    main { width:100%; max-width:680px; padding:1.5rem 1.5rem 4rem; }
+    section { margin:2rem 0; }
+    h2 { font-size:1.25rem; margin:0 0 .75rem; border-bottom:1px solid #3a372f; padding-bottom:.4rem; }
+    .lead { font-size:1.1rem; color:var(--fg); }
+    .apps { list-style:none; padding:0; margin:0; display:grid; gap:1rem; }
+    .app { border:1px solid #3a372f; border-radius:14px; padding:1.25rem 1.5rem; }
+    .app strong { font-size:1.1rem; display:block; }
+    .app p { margin:.4rem 0 0; color:var(--fg); }
+    .note { border:1px solid #3a372f; border-radius:14px; padding:1.25rem 1.5rem; }
+    footer { color:var(--muted); font-size:.85rem; padding:0 1.5rem 2.5rem; text-align:center; }
+    footer a { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Mullensoft</p>
+    <h1>Tune-Sync Apps</h1>
+  </header>
+
+  <main>
+    <p class="lead">These apps are all clients of the same sync folder — point them at one shared folder in your cloud drive of choice (for example <code>iCloud Drive/TuneSync</code>) and your tunes, recordings, and practice data flow between them automatically.</p>
+
+    <section>
+      <h2>The apps</h2>
+      <ul class="apps">
+        <li class="app">
+          <strong>Tune Hub</strong>
+          <p>Your tune library's home base, on desktop. Curate tunes, versions, and recordings, track sources and performers, and manage your practice backlog.</p>
+        </li>
+        <li class="app">
+          <strong>Timeliner</strong>
+          <p>Annotate and review your lesson recordings — mark up video or audio from lessons and practice sessions and link the markers back to the tunes you're working on.</p>
+        </li>
+        <li class="app">
+          <strong>Jam Buddy</strong>
+          <p>Your jam companion — pull up tune lists for a session, track who you played with, and work through a practice backlog playlist between tunes.</p>
+        </li>
+        <li class="app">
+          <strong>Practice Buddy</strong>
+          <p>A practice timer with built-in micro-breaks that also carries your daily practice queue, so what you're due to work on follows you to the timer.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="note">
+      <h2>One sync folder, several apps</h2>
+      <p>Each app is a client of the sync folder you choose — nothing is stored on our servers. Add or remove apps from the same folder at any time; they'll pick up each other's changes without any extra setup.</p>
+      <p style="margin-top:.75rem">Seeing sync get stuck? See <a href="../cloud-sync-tips/">Cloud Sync Tips</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../">Mullensoft</a> · © 2026 Casey Mullen</p>
+  </footer>
+</body>
+</html>
