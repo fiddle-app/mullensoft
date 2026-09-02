@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Jam Buddy — Mullensoft</title>
+  <meta name="description" content="Jam Buddy — the jam companion for old-time and fiddle players. Plan jams, pull up the right tune list on the spot, and keep track of what you played and who you played it with." />
+
+  <!-- Tokens mirror the mullensoft.com landing (placeholder system; see mullensoft/README). -->
+  <style>
+    :root { --bg:#1b1a17; --fg:#f4f1ea; --muted:#a8a194; --accent:#c8783c; --line:#3a372f; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;
+           background:var(--bg); color:var(--fg);
+           display:flex; flex-direction:column; align-items:center; min-height:100svh; }
+    a { color:var(--accent); }
+    header { text-align:center; padding:3.5rem 1.5rem 1rem; }
+    header .eyebrow { color:var(--muted); text-transform:uppercase; letter-spacing:1.5px;
+                     font-size:.78rem; margin:0 0 .5rem; }
+    header .eyebrow a { color:var(--muted); text-decoration:none; }
+    header .eyebrow a:hover { color:var(--accent); }
+    h1 { font-size:clamp(1.8rem,5vw,2.6rem); margin:0; }
+    .badge { display:inline-block; margin-top:.75rem; font-size:.72rem;
+             text-transform:uppercase; letter-spacing:1px; color:var(--muted);
+             border:1px solid var(--line); border-radius:999px; padding:.15rem .55rem; }
+    main { width:100%; max-width:680px; padding:1.5rem 1.5rem 4rem; }
+    section { margin:2rem 0; }
+    h2 { font-size:1.25rem; margin:0 0 .75rem; border-bottom:1px solid var(--line); padding-bottom:.4rem; }
+    .lead { font-size:1.1rem; }
+    ul.feat { list-style:none; padding:0; margin:0; display:grid; gap:1rem; }
+    ul.feat li { border:1px solid var(--line); border-radius:14px; padding:1.1rem 1.4rem; }
+    ul.feat strong { display:block; font-size:1.05rem; }
+    ul.feat p { margin:.35rem 0 0; }
+    .shots { display:grid; gap:1.5rem; grid-template-columns:1fr; margin:0; }
+    @media (min-width:560px) { .shots { grid-template-columns:1fr 1fr; } }
+    figure { margin:0; }
+    figure img { width:100%; height:auto; display:block;
+                 border:1px solid var(--line); border-radius:16px; background:#000; }
+    figcaption { color:var(--muted); font-size:.9rem; margin-top:.6rem; }
+    .note { border:1px solid var(--line); border-radius:14px; padding:1.25rem 1.5rem; }
+    .note p { margin:0 0 .75rem; }
+    .note p:last-child { margin-bottom:0; }
+    footer { color:var(--muted); font-size:.85rem; padding:0 1.5rem 2.5rem; text-align:center; }
+    footer a { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow"><a href="../">Mullensoft</a></p>
+    <h1>Jam Buddy</h1>
+    <span class="badge">Coming soon</span>
+  </header>
+
+  <main>
+    <p class="lead">Helping you out in a jam. Jam Buddy is the phone-sized companion for old-time and fiddle jams — it knows which jams are coming up, which tunes you can lead versus follow, and what actually got played once the night is over.</p>
+
+    <section>
+      <h2>What it does</h2>
+      <ul class="feat">
+        <li>
+          <strong>Your jams, upcoming and past</strong>
+          <p>Recurring sessions and one-offs live side by side, with a countdown to the next one and a record of the last ones — each with its key and tuning right in the title.</p>
+        </li>
+        <li>
+          <strong>The right tune list, on the spot</strong>
+          <p>Filter to the jam's key and tuning, then search. Tunes group by whether you can <em>lead</em> them or just <em>play</em> them, so you know what you can call when it's your turn.</p>
+        </li>
+        <li>
+          <strong>Check them off as they go by</strong>
+          <p>Tap a tune as it's played and it strikes through and drops into the played count — so at the end of the night you have a real set list, not a memory.</p>
+        </li>
+        <li>
+          <strong>Record straight from the jam</strong>
+          <p>Hit record without leaving the tune list. Takes land against the jam and the tune, ready to review at home.</p>
+        </li>
+        <li>
+          <strong>Friends, learning, and stats</strong>
+          <p>Track who you play with, what you're currently learning, and how your repertoire is growing over time.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>A look at it</h2>
+      <div class="shots">
+        <figure>
+          <img src="img/home.png" alt="Jam Buddy home screen showing a Start a jam button, upcoming jams with countdowns, recent jams, and the Jams, Tunes, Friends, Media, Learning, and Stats sections." />
+          <figcaption>Home — upcoming jams, recent jams, and the rest of your library a tap away.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/jam-tunes.png" alt="Jam Buddy tune list during a jam, filtered to the key of D, showing Can Lead and Can Play groups with tunes checked off as played." />
+          <figcaption>In a jam — filtered to the key, split into what you can lead and what you can play, checked off as you go.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="note">
+      <h2>Part of the tune-sync family</h2>
+      <p>Jam Buddy is one of the <a href="../tune-sync-apps/">tune-sync apps</a>. Point it at the same shared folder in your cloud drive as Tune Hub, Timeliner, and Practice Buddy, and your tunes, recordings, and practice data flow between them — nothing is stored on our servers.</p>
+      <p>Sync looking stuck? See <a href="../cloud-sync-tips/">Cloud Sync Tips</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../">Mullensoft</a> · <a href="../tune-sync-apps/">Tune-Sync Apps</a> · <a href="../cloud-sync-tips/">Cloud Sync Tips</a></p>
+    <p>© 2026 Casey Mullen</p>
+  </footer>
+</body>
+</html>
