@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Cloud Sync Tips — Mullensoft</title>
+  <title>Cloud Sync Tips | Mullensoft</title>
   <meta name="description" content="Troubleshooting tips for iCloud Drive, Google Drive, and OneDrive when the tune-sync apps stop flowing data." />
 
   <!-- Tokens mirror the mullensoft.com landing (placeholder system; see mullensoft/README). -->
@@ -38,7 +38,7 @@
 
   <main>
     <p class="lead">The <a href="../tune-sync-apps/">tune-sync apps</a> use existing cloud drive providers like iCloud and Google Drive so that your private data is not stored on our servers. For some cloud providers, the hidden files that tune-sync apps use to sync data will show up as files that you have "recently changed." We have mostly eliminated that for iCloud, but Google Drive doesn't give us a way to hide that activity. We would if we could. :-)</p>
-    <p class="lead">These cloud providers normally work great&hellip; until they don't. If things seem "stuck" &mdash; you make changes on your iPhone and they're failing to show up in your Windows app &mdash; here are some techniques that can sometimes get data flowing again, roughly in order from gentlest to most drastic.</p>
+    <p class="lead">These cloud providers normally work great&hellip; until they don't. If things seem "stuck" (you make changes on your iPhone and they don't show up in your Windows app), here are some techniques that can sometimes get data flowing again, roughly in order from gentlest to most drastic.</p>
 
     <section>
       <h2>iCloud Drive</h2>
@@ -46,11 +46,11 @@
       <h3>Mac</h3>
       <ol>
         <li>There's no explicit "pause" button on Mac. Open <strong>System Settings → Apple ID → iCloud → iCloud Drive</strong>, then toggle it <strong>off, wait 30 seconds, and turn it back on</strong>. This forces a fresh sync handshake.</li>
-        <li>Toggle Wi-Fi off and back on &mdash; a common, low-risk way to reset the network path iCloud is using.</li>
-        <li>If it's still stuck, some people force-quit the <code>bird</code> process (Apple's iCloud sync daemon) from <strong>Activity Monitor</strong>. macOS restarts it automatically within a few seconds &mdash; safe, and doesn't touch your iCloud settings.</li>
-        <li>Sign out of iCloud and back in (<strong>System Settings → Apple ID</strong>) &mdash; last resort, as it can take a while to re-verify everything.</li>
+        <li>Toggle Wi-Fi off and back on. It's a common, low-risk way to reset the network path iCloud is using.</li>
+        <li>If it's still stuck, some people force-quit the <code>bird</code> process (Apple's iCloud sync daemon) from <strong>Activity Monitor</strong>. macOS restarts it automatically within a few seconds. This is safe and doesn't touch your iCloud settings.</li>
+        <li>Sign out of iCloud and back in (<strong>System Settings → Apple ID</strong>). This is a last resort, as it can take a while to re-verify everything.</li>
         <li>Restart the Mac.</li>
-        <li>Check your iCloud storage quota (<strong>System Settings → Apple ID → iCloud</strong>) &mdash; a full account silently stops new data from syncing.</li>
+        <li>Check your iCloud storage quota (<strong>System Settings → Apple ID → iCloud</strong>). A full account silently stops new data from syncing.</li>
         <li>Check <a href="https://www.apple.com/support/systemstatus/" target="_blank" rel="noopener">Apple's System Status page</a> for an iCloud Drive outage.</li>
       </ol>
 
@@ -66,7 +66,7 @@
 
       <h3>iOS</h3>
       <ol>
-        <li>Toggle Airplane Mode on, wait 30 seconds, then off &mdash; a quick way to force a fresh connection.</li>
+        <li>Toggle Airplane Mode on, wait 30 seconds, then off. This is a quick way to force a fresh connection.</li>
         <li>Go to <strong>Settings → [your name] → iCloud → iCloud Drive</strong>, turn it off, wait 30 seconds, and turn it back on.</li>
         <li>Force-quit the tune-sync app (swipe it away in the app switcher) and reopen it.</li>
         <li>Restart the iPhone or iPad.</li>
@@ -84,7 +84,7 @@
         <li>Quit Google Drive entirely and relaunch it from your Applications folder or Start menu.</li>
         <li>Sign out of the desktop app (<strong>Settings → Disconnect account</strong>) and sign back in.</li>
         <li>Restart your computer.</li>
-        <li>Check your storage quota at <a href="https://drive.google.com/settings" target="_blank" rel="noopener">drive.google.com/settings</a> &mdash; a full Google account stops new files from syncing.</li>
+        <li>Check your storage quota at <a href="https://drive.google.com/settings" target="_blank" rel="noopener">drive.google.com/settings</a>. A full Google account stops new files from syncing.</li>
         <li>Check the <a href="https://www.google.com/appsstatus/dashboard/" target="_blank" rel="noopener">Google Workspace Status Dashboard</a> for a Drive outage.</li>
       </ol>
 
@@ -92,7 +92,7 @@
       <ol>
         <li>Open the Drive app and pull down to refresh.</li>
         <li>In <strong>Android Settings → Apps → Google Drive → Force stop</strong>, then reopen the app.</li>
-        <li>In the same Settings screen, clear the app's <strong>cache</strong> (not "clear data" &mdash; that signs you out).</li>
+        <li>In the same Settings screen, clear the app's <strong>cache</strong> (not "clear data", which signs you out).</li>
         <li>Check <strong>Settings → Apps → Google Drive → Mobile data &amp; Wi-Fi</strong> for background-data restrictions.</li>
         <li>Check your storage quota at <a href="https://drive.google.com/settings" target="_blank" rel="noopener">drive.google.com/settings</a>.</li>
         <li>Check the <a href="https://www.google.com/appsstatus/dashboard/" target="_blank" rel="noopener">Google Workspace Status Dashboard</a>.</li>
