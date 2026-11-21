@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Timeliner | Mullensoft</title>
+  <meta name="description" content="Timeliner helps you review fiddle lessons and practice recordings on iPad: outline a recording into time-stamped notes, loop a passage slower and jump to the part you work on." />
+
+  <!-- Tokens mirror the mullensoft.com landing (placeholder system; see mullensoft/README). -->
+  <style>
+    :root { --bg:#1b1a17; --fg:#f4f1ea; --muted:#a8a194; --accent:#c8783c; --line:#3a372f; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;
+           background:var(--bg); color:var(--fg);
+           display:flex; flex-direction:column; align-items:center; min-height:100svh; }
+    a { color:var(--accent); }
+    header { text-align:center; padding:3.5rem 1.5rem 1rem; }
+    header .eyebrow { color:var(--muted); text-transform:uppercase; letter-spacing:1.5px;
+                     font-size:.78rem; margin:0 0 .5rem; }
+    header .eyebrow a { color:var(--muted); text-decoration:none; }
+    header .eyebrow a:hover { color:var(--accent); }
+    h1 { font-size:clamp(1.8rem,5vw,2.6rem); margin:0; }
+    .badge { display:inline-block; margin-top:.75rem; font-size:.72rem;
+             text-transform:uppercase; letter-spacing:1px; color:var(--muted);
+             border:1px solid var(--line); border-radius:999px; padding:.15rem .55rem; }
+    main { width:100%; max-width:680px; padding:1.5rem 1.5rem 4rem; }
+    section { margin:2rem 0; }
+    h2 { font-size:1.25rem; margin:0 0 .75rem; border-bottom:1px solid var(--line); padding-bottom:.4rem; }
+    .lead { font-size:1.1rem; }
+    ul.feat { list-style:none; padding:0; margin:0; display:grid; gap:1rem; }
+    ul.feat li { border:1px solid var(--line); border-radius:14px; padding:1.1rem 1.4rem; }
+    ul.feat strong { display:block; font-size:1.05rem; }
+    ul.feat p { margin:.35rem 0 0; }
+    .shots { display:grid; gap:1.5rem; grid-template-columns:1fr; margin:0; }
+    @media (min-width:560px) { .shots { grid-template-columns:1fr 1fr; } }
+    figure { margin:0; }
+    figure img { width:100%; height:auto; display:block;
+                 border:1px solid var(--line); border-radius:16px; background:#000; }
+    figcaption { color:var(--muted); font-size:.9rem; margin-top:.6rem; }
+    .note { border:1px solid var(--line); border-radius:14px; padding:1.25rem 1.5rem; }
+    .note p { margin:0 0 .75rem; }
+    .note p:last-child { margin-bottom:0; }
+    footer { color:var(--muted); font-size:.85rem; padding:0 1.5rem 2.5rem; text-align:center; }
+    footer a { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow"><a href="../">Mullensoft</a></p>
+    <h1>Timeliner</h1>
+  </header>
+
+  <main>
+    <p class="lead">Timeliner helps you review your fiddle lessons and practice recordings. Load a video or audio recording, split it into time segments, and attach notes to each segment, so you can jump straight to the part you want to work on.</p>
+
+    <section>
+      <h2>What it does</h2>
+      <ul class="feat">
+        <li>
+          <strong>Projects and Timelines</strong>
+          <p>The ＋ button starts a project from your Photo Library, the Files app or your Apple Music Library; open it and add segments and notes along its timeline.</p>
+        </li>
+        <li>
+          <strong>Transcript</strong>
+          <p>The optional transcript turns speech in a recording into a searchable timeline, entirely on your device.</p>
+        </li>
+        <li>
+          <strong>Loop, speed and pitch</strong>
+          <p>Loop a passage and change its speed and pitch to work out a tune.</p>
+        </li>
+        <li>
+          <strong>No account</strong>
+          <p>Your recordings and notes stay on your device and, if you choose, in a shared library in your own iCloud Drive.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="note">
+      <h2>Support and privacy</h2>
+      <p><a href="support/">Support</a> · <a href="privacy/">Privacy policy</a> · <a href="mailto:mullensoft+timeliner@gmail.com">mullensoft+timeliner@gmail.com</a></p>
+      <p>For iPad, in landscape. Part of the <a href="../tune-sync-apps/">tune-sync apps</a>; see <a href="../cloud-sync-tips/">Cloud Sync Tips</a> if sync looks stuck.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../">Mullensoft</a> · <a href="support/">Support</a> · <a href="privacy/">Privacy</a></p>
+    <p>© 2026 MullenSoft</p>
+  </footer>
+</body>
+</html>
